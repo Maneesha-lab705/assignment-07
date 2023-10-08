@@ -28,15 +28,16 @@ section>div>h3{
     left: 25vw;
     border-bottom: lawngreen solid 2px;
     border-left: lawngreen solid 2px;
-    /*border: lawngreen solid 2px;*/
     margin: 0;
 }
-.main>h1{
-    position: relative;
+
+#welcome{
+    position: absolute;
     top: 5vw;
     left: 5vw;
     font-size: 70px;
-    /*color: #0a58ca;*/
+    width: fit-content;
+    color: RED;
 }
 h3{
     position: relative;
@@ -108,6 +109,6 @@ h3{
 #creat{
     position: relative;
     top: 7vw;
-    left: 5vw;
+    left: 4vw;
     font-size: 25px;
 }
