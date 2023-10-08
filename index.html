@@ -7,11 +7,44 @@
     <meta name="description" content="#1 software Engineering, institute of ijse">
     <meta name="author" content="IJSE - Institute Of Ijse">
     <meta name="viewport" content="width =device-width,initial-scale.0">
+
     <link rel="stylesheet" href="assert/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assert/cssStyle/normalize.css">
+
     <link rel="stylesheet" href="assert/cssStyle/index.css">
+    <link rel="stylesheet" href="assert/cssStyle/loging.css">
+    <link rel="stylesheet" href="assert/cssStyle/dashbord.css">
+    <link rel="stylesheet" href="assert/cssStyle/item.css">
+    <link rel="stylesheet" href="assert/cssStyle/orders.css">
 </head>
 <body>
+
+<section id="login_section">
+    <div class="main">
+        <h1>Welcome!</h1>
+        <h3>To FOOD CORNER</h3>
+        <a href=""><img  class="img" src="assert/img/icons8-facebook-96.png" alt="fb"></a>
+        <a class="whatsapp" href=""><img class="img" src="assert/img/icons8-whatsapp-96.png " alt="fb"></a>
+        <div>
+            <h1>Sign In</h1>
+            <form>
+                <form>
+                    <div class="mb-3">
+                        <input class="form-control-input" id="id" type="text" required>
+                        <label for="id" class="form-label">Id</label>
+                    </div>
+                    <div class="mb-3">
+                        <input id="user_name" class="form-control-input" type="text" required>
+                        <label class="form-label" for="name">Name</label>
+                    </div>
+                </form>
+                <h3 id="creat">Create Account</h3>
+                <a id="sign_in"><button type="submit" class="btn btn-primary">Sign In</button></a>
+            </form>
+        </div>
+    </div>
+</section>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <img src="assert/img/ic.png" alt="icon">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,58 +52,136 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="dashbord.html">Home <span class="sr-only"></span></a>
-            <a class="nav-item nav-link" href="index.html">Customer</a>
-            <a class="nav-item nav-link" href="item.html">Item</a>
-            <a class="nav-item nav-link" href="orders.html">Orders</a>
-            <h1>CUSTOMER REGISTRATION</h1>
+            <a class="nav-item nav-link active" id="dashboard_nav">Home <span class="sr-only"></span></a>
+            <a class="nav-item nav-link" id="customer_nav">Customer</a>
+            <a class="nav-item nav-link" id="item_nav">Item</a>
+            <a class="nav-item nav-link" id="order_nav">Orders</a>
         </div>
     </div>
 </nav>
-<div class="container container-box col-lg-12 row-cols-lg-auto">
 
+<div class="container" id="dashboard_section">
 
+    <div class="row ">
+        <div class="col-xl-6 col-lg-6">
+            <div class="card l-bg-cherry">
+                <div class="card-statistic-3 p-4">
+                    <div class="card-icon card-icon-large"><i class="fas fa-shopping-cart"></i></div>
+                    <div class="mb-4">
+                        <h5 class="card-title mb-0">New Orders</h5>
+                    </div>
+                    <div class="row align-items-center mb-2 d-flex">
+                        <div class="col-8">
+                            <h2 class="d-flex align-items-center mb-0">
+                                3,243
+                            </h2>
+                        </div>
+                        <div class="col-4 text-right">
+                            <span>12.5% <i class="fa fa-arrow-up"></i></span>
+                        </div>
+                    </div>
+                    <div class="progress mt-1 " data-height="8" style="height: 8px;">
+                        <div class="progress-bar l-bg-cyan" role="progressbar" data-width="25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <div class="card l-bg-blue-dark">
+                <div class="card-statistic-3 p-4">
+                    <div class="card-icon card-icon-large"><i class="fas fa-users"></i></div>
+                    <div class="mb-4">
+                        <h5 class="card-title mb-0">Customers</h5>
+                    </div>
+                    <div class="row align-items-center mb-2 d-flex">
+                        <div class="col-8">
+                            <h2 class="d-flex align-items-center mb-0">
+                                15.07k
+                            </h2>
+                        </div>
+                        <div class="col-4 text-right">
+                            <span>9.23% <i class="fa fa-arrow-up"></i></span>
+                        </div>
+                    </div>
+                    <div class="progress mt-1 " data-height="8" style="height: 8px;">
+                        <div class="progress-bar l-bg-green" role="progressbar" data-width="25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <div class="card l-bg-green-dark">
+                <div class="card-statistic-3 p-4">
+                    <div class="card-icon card-icon-large"><i class="fas fa-ticket-alt"></i></div>
+                    <div class="mb-4">
+                        <h5 class="card-title mb-0">Item</h5>
+                    </div>
+                    <div class="row align-items-center mb-2 d-flex">
+                        <div class="col-8">
+                            <h2 class="d-flex align-items-center mb-0">
+                                578
+                            </h2>
+                        </div>
+                        <div class="col-4 text-right">
+                            <span>10% <i class="fa fa-arrow-up"></i></span>
+                        </div>
+                    </div>
+                    <div class="progress mt-1 " data-height="8" style="height: 8px;">
+                        <div class="progress-bar l-bg-orange" role="progressbar" data-width="25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <div class="card l-bg-orange-dark">
+                <div class="card-statistic-3 p-4">
+                    <div class="card-icon card-icon-large"><i class="fas fa-dollar-sign"></i></div>
+                    <div class="mb-4">
+                        <h5 class="card-title mb-0">Revenue Today</h5>
+                    </div>
+                    <div class="row align-items-center mb-2 d-flex">
+                        <div class="col-8">
+                            <h2 class="d-flex align-items-center mb-0">
+                                $11.61k
+                            </h2>
+                        </div>
+                        <div class="col-4 text-right">
+                            <span>2.5% <i class="fa fa-arrow-up"></i></span>
+                        </div>
+                    </div>
+                    <div class="progress mt-1 " data-height="8" style="height: 8px;">
+                        <div class="progress-bar l-bg-cyan" role="progressbar" data-width="25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container container-box col-lg-12 row-cols-lg-auto" id="customer_section">
     <div class="row">
-
-        <!----------------------form--------------------------->
-        <div class="form-col col-sm-12 col-md-6 col-lg-6 col-xl-6" id="data">
+        <div class="form-col col-sm-12 col-md-6 col-lg-6 col-xl-6" id="data_customer">
             <form class="form-block">
             <div class="mb-3">
-                <!--                        <label for="id" class="form-label">ID</label>-->
-                <!--                        <input type="number" class="form-control" id="id"  placeholder="Enter Id">-->
-                <input type="input" class="form__field" placeholder="CUSTOMER ID" name="name" id='customer_id' required />
+               <input type="input" class="form__field" placeholder="CUSTOMER ID" name="name" id='customer_id' required />
             </div>
             <div class="mb-3">
-                <!--                        <label for="name" class="form-label">Name</label>-->
-                <!--                        <input type="number" class="form-control" id="name"  placeholder="Enter name">-->
-                <input type="input" class="form__field" placeholder="CUSTOMER NAME" name="name" id='name' required />
-
+                <input type="input" class="form__field" placeholder="CUSTOMER NAME" name="name" id='customer_name' required />
             </div>
             <div class="mb-3">
-                <!--                        <label for="contact" class="form-label">Contact</label>-->
-                <input type="input" class="form__field" placeholder="ADDRESS" name="PRICE" id='address' required />
-
+                <input type="input" class="form__field" placeholder="ADDRESS" name="PRICE" id='customer_address' required />
             </div>
-
-
             <div class="mb-3">
-                <!--                        <label for="contact" class="form-label">Contact</label>-->
-                <input type="input" class="form__field" placeholder="CONTACT" name="qty" id='phone' required />
-
+                <input type="input" class="form__field" placeholder="CONTACT" name="qty" id='customer_phone' required />
             </div>
-
-
                 <div class="mt-4 mb-5">
-                    <button id="submit" type="button" class="btn btn-success">Save</button>
-                    <button id="update" type="button" class="btn btn-primary">Update</button>
-                    <button id="delete" type="button" class="btn btn-danger">Delete</button>
-                    <button id="reset" type="reset" class="btn btn-warning">Clear</button>
+                    <button id="submit_customer" type="button" class="btn btn-success">Save</button>
+                    <button id="update_customer" type="button" class="btn btn-primary">Update</button>
+                    <button id="delete_customer" type="button" class="btn btn-danger">Delete</button>
+                    <button id="reset_customer" type="reset_" class="btn btn-warning">Clear</button>
                 </div>
-
         </form>
         </div>
-
-        <!----------------------tbl--------------------------->
         <div class="tbl-col col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <table  id="table_body" class="table">
                 <thead>
@@ -81,71 +192,193 @@
                     <th scope="col">Contact</th>
                 </tr>
                 </thead>
-                <tbody id="table-body">
+                <tbody id="table-body_customer">
                 </tbody>
             </table>
         </div>
+    </div>
+</div>
 
+<div class="container container-box col-lg-12 row-cols-lg-auto" id="item_section">
+    <div class="row">
+        <div class="form-col col-sm-12 col-md-6 col-lg-6 col-xl-6" id="data_item">
+            <form class="form-block">
+                <div class="mb-3">
+                    <input type="input" class="form__field" placeholder="ITEM ID" name="name" id='item_code' required />
+                </div>
+                <div class="mb-3">
+                   <input type="input" class="form__field" placeholder="ITEM NAME" name="name" id='item_description' required />
+                </div>
+                <div class="mb-3">
+                    <input type="input" class="form__field" placeholder="PRICE" name="PRICE" id='item_price' required />
+                </div>
+                <div class="mb-3">
+                    <input type="input" class="form__field" placeholder="QTY" name="qty" id='item_qty' required />
+                </div>
+                <div class="mt-4 mb-5">
+                    <button id="submit" type="button" class="btn btn-success">Save</button>
+                    <button id="update" type="button" class="btn btn-primary">Update</button>
+                    <button id="delete" type="button" class="btn btn-danger">Delete</button>
+                    <button id="reset" type="reset" class="btn btn-warning">Clear</button>
+                </div>
+            </form>
+        </div>
+        <div class="tbl-col col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Qty</th>
+                </tr>
+                </thead>
+                <tbody id="item_table-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="order_section">
+    <div class="row">
+        <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12" id="data">
+            <u class="topic"><h3 >Invoice Data</h3></u>
+            <form>
+                <div class="mb-3">
+                    <input id="orderId" class="form-control-input" type="text" required>
+                    <label for="orderId" class="form-label">Order Id</label>
+                </div>
+                <div class="mb-3">
+                    <select class="form-control-input" id="selectCusID"></select>
+                    <label for="selectCusID" class="form-label">Customer Id</label>
+                </div>
+                <div class="mb-3">
+                    <input id="name" class="form-control-input" type="text" required>
+                    <label class="form-label" for="name">Name</label>
+                </div>
+                <div class="mb-3">
+                    <input class="form-control-input" id="date" type="date" required>
+                    <label for="date" class="form-label">Order Date</label>
+                </div>
+            </form>
+        </div>
+        <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12" id="data1">
+            <u class="topic"><h3 >Item Details</h3></u>
+            <form>
+                <div class="mb-3">
+                    <input class="form-control-input" id="itemCode" type="text" required>
+                    <label for="itemCode" class="form-label">Item Code</label>
+                </div>
+                <div class="mb-3">
+                    <input id="description" class="form-control-input" type="text" required>
+                    <label class="form-label" for="description">Description</label>
+                </div>
+                <div class="mb-3">
+                    <input id="price" class="form-control-input" type="number" required>
+                    <label class="form-label" for="price">Price</label>
+                </div>
+                <div class="mb-3">
+                    <input id="qty" class="form-control-input" type="number" required>
+                    <label class="form-label" for="qty">Qty</label>
+                </div>
+                <div class="mb-3">
+                    <input id="orderQty" class="form-control-input" type="number" required>
+                    <label class="form-label" for="orderQty">Order Qty</label>
+                </div>
+                <div class="mt-4 mb-5">
+                    <button type="button" class="btn btn-primary">Add Item</button>
+                </div>
+            </form>
+        </div>
+        <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12" id="data2">
+            <form>
+                <div class="mb-3">
+                    <span class="total" id="total-text">Total : </span>
+                    <span id="total">00.0</span> <span class="unit">Rs/=</span>
+                </div>
+                <div class="mb-3">
+                    <input id="cash" class="form-control-input" type="number" required>
+                    <label class="form-label" for="cash">Cash</label>
+                </div>
+                <div class="mb-3">
+                    <input id="balance" class="form-control-input" type="number" required>
+                    <label class="form-label" for="balance">Balance</label>
+                </div>
+                <div class="mt-4 mb-5">
+                    <button type="submit" class="btn btn-success">Place Order</button>
+                </div>
+            </form>
+        </div>
+        <div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="height:180px;">
+            <table class="table table-bordered text-white">
+                <thead class="bg-primary">
+                <tr>
+                    <th>Item Code</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody class="bg-light text-dark" id="order-table-body">
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 
 <script src="assert/lib/jQuery.min.js"></script>
+
 <script>
+    $('#dashboard_section').css('display', 'none');
+    $('.navbar').css('display', 'none');
+    $('#customer_section').css('display', 'none');
+    $('#order_section').css('display', 'none');
+    $('#item_section').css('display', 'none');
 
-    $('#submit').on('click',()=>{
-        let customer_id = $('#customer_id').val();
-        let name = $('#name').val();
-        let address  = $('#address').val();
-        let contact = $('#phone').val();
-
-        let recode = `<td class = "id">${customer_id}</td><td class="name">${name}</td><td class="address">${address}</td><td class="phone">${contact}</td>`
-
-        let newRow = $('<tr>');
-        newRow.append('<td>' + customer_id + '</td>');
-        newRow.append('<td>' + name + '</td>');
-        newRow.append('<td>' + address + '</td>');
-        newRow.append('<td>' + contact + '</td>');
-
-        $('#table-body').append(newRow);
-
-        $("#reset").click();
+    $('#sign_in').on('click', () => {
+        $('.navbar').css('display', 'block');
+        $('#dashboard_section').css('display', 'block');
+        $('#login_section').css('display', 'none');
+        $('#customer_section').css('display', 'none');
+        $('#item_section').css('display', 'none');
+        $('#order_section').css('display', 'none');
     });
 
-    $('#update').on('click',()=>{
-        let customer_id = $('#customer_id').val();
-        let name = $('#name').val();
-        let address  = $('#address').val();
-        let contact = $('#phone').val();
-
-        let recode = `<td class = "id">${customer_id}</td><td class="name">${name}</td><td class="address">${address}</td><td class="phone">${contact}</td>`
-
-        $("tbody>tr").eq(row_index).html(recode);
-
-        $("#reset").click();
+    $('#dashboard_nav').on('click', () => {
+        $('.navbar').css('display', 'block');
+        $('#dashboard_section').css('display', 'block');
+        $('#login_section').css('display', 'none');
+        $('#customer_section').css('display', 'none');
+        $('#item_section').css('display', 'none');
+        $('#order_section').css('display', 'none');
     });
 
-    $('#delete').on('click',()=>{
-        $("tbody>tr").eq(row_index).remove();
-
-        $("#reset").click();
+    $('#customer_nav').on('click', () => {
+        $('#customer_section').css('display', 'block');
+        $('#dashboard_section').css('display', 'none');
+        $('#login_section').css('display', 'none');
+        $('#item_section').css('display', 'none');
+        $('#order_section').css('display', 'none');
     });
 
-    $("tbody").on("click", "tr", function () {
-
-        row_index = $(this).index();
-
-        let customer_id = $(this).find("td:eq(0)").text();
-        let name = $(this).find("td:eq(1)").text();
-        let address = $(this).find("td:eq(2)").text();
-        let contact = $(this).find("td:eq(3)").text();
-
-        $('#customer_id').val(customer_id);
-        $('#name').val(name);
-        $('#address').val(address);
-        $('#phone').val(contact);
-
+    $('#item_nav').on('click', () => {
+        $('#item_section').css('display', 'block');
+        $('#login_section').css('display', 'none');
+        $('#dashboard_section').css('display', 'none');
+        $('#customer_section').css('display', 'none');
+        $('#order_section').css('display', 'none');
     });
 
+    $('#order_nav').on('click', () => {
+        $('#item_section').css('display', 'none');
+        $('#dashboard_section').css('display', 'none');
+        $('#login_section').css('display', 'none');
+        $('#customer_section').css('display', 'none');
+        $('#order_section').css('display', 'block');
+    });
 </script>
 </body>
 </html>
